@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Stack+Sans+Headline:wght@200..700&display=swap'); /*Fonts google*/
+
+body{
+    background-color: gray;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+
+    /*Imagen de fondo*/
+    background-image: url("Img/bg-night-horizontal.webp");
+    background-size: cover; /* Escala la imagen para cubrir todo el espacio sin deformarse */
+    background-position: center; /* Centra la imagen vertical y horizontalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se duplique como mosaico */
+    background-attachment: fixed; /*la imagen se queda fija al hacer scroll */
+
+    font-family: "Pixelify Sans" , sans-serif;
+    
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*--CARD--*/
+.card{
+    width: 30rem;
+    background-color: rgb(8, 0, 37);
+    border: 6px solid white;
+    border-radius: 2%;
+    color: white;
+
+    display:flex;
+    flex-direction: column;
+
+    padding: 2rem 3rem;
+    
+}
+
+/*--Secction Image--*/
+.profile-div-image{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap:1rem;
+    padding: 2rem;
+    
+}
+
+.profile-image{
+    width: 10rem;
+    aspect-ratio: 1 / 1; /* Fuerza una relación de aspecto 1:1 */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    cursor: pointer;
+}
+
+/*Etiquetas que no quiero margen*/
+h1,p, h3{
+    margin: 0px;
+}
+
+.paragraph-text{
+    font-size: 1.2rem;
+}
+
+/*--Seccion links--*/
+.div-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+a{
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none; /* Elimina la línea de subrayado abajo */
+    color: inherit;
+
+    
+}
+
+a > div{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+
+/*--Color de los iconos de las redes--*/
+.link-instagram > svg{
+    color: rgb(245, 111, 22);
+    width: 2.2rem;
+}
+.link-github > svg{
+    color: rgb(109, 17, 109);
+    width: 2.2rem;
+}
+.link-spotify > svg{
+    color: rgb(35, 138, 35);
+    width: 2.2rem;
+}
+.link-linkedin > svg{
+    color: rgb(55, 108, 253);
+    width: 2.2rem;
+}
+
+.link-portfolio > svg{
+    width: 2.2rem;
+}
+
+/*--Footer--*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.description-footer{
+    font-size: 1.3rem;
+}
+
+.div-footer{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.div-footer > svg{
+    width: 1.5rem;
+}
